@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE fcpxml>
+<fcpxml version="1.4">
+	<resources>
+		<format frameDuration="100/3000s" height="1080" id="r1" name="FFVideoFormat1080p30" width="1920"/>
+		<format height="2248" id="r2" name="FFVideoFormatRateUndefined" width="2998"/>
+		<asset duration="0s" format="r2" hasVideo="1" id="r3" name="Slide1" src="file:///Users/dontsov/Documents/CODE/Keylogger/examples/presentation/Slide1.jpg" start="0s" uid="16157115181310012F2A175E239F6128C1726F">
+			<metadata>
+				<md key="com.apple.proapps.mio.ingestDate" value="2017-03-20 02:17:23 +0300"/>
+				<md key="com.apple.proapps.spotlight.kMDItemOrientation" value="0"/>
+			</metadata>
+		</asset>
+		<asset duration="0s" format="r2" hasVideo="1" id="r4" name="Slide2" src="file:///Users/dontsov/Documents/CODE/Keylogger/examples/presentation/Slide2.jpg" start="0s" uid="1318A24481B545C611362458978E5613CB">
+			<metadata>
+				<md key="com.apple.proapps.mio.ingestDate" value="2017-03-20 02:17:23 +0300"/>
+				<md key="com.apple.proapps.spotlight.kMDItemOrientation" value="0"/>
+			</metadata>
+		</asset>
+		<asset duration="0s" format="r2" hasVideo="1" id="r5" name="Slide3" src="file:///Users/dontsov/Documents/CODE/Keylogger/examples/presentation/Slide3.jpg" start="0s" uid="15F1983A81533AB0FD11BDC134E0717B84D6">
+			<metadata>
+				<md key="com.apple.proapps.mio.ingestDate" value="2017-03-20 02:17:23 +0300"/>
+				<md key="com.apple.proapps.spotlight.kMDItemOrientation" value="0"/>
+			</metadata>
+		</asset>
+		<asset duration="0s" format="r2" hasVideo="1" id="r6" name="Slide4" src="file:///Users/dontsov/Documents/CODE/Keylogger/examples/presentation/Slide4.jpg" start="0s" uid="96F17DE8586611D9866F4AB107F4D6756">
+			<metadata>
+				<md key="com.apple.proapps.mio.ingestDate" value="2017-03-20 02:17:23 +0300"/>
+				<md key="com.apple.proapps.spotlight.kMDItemOrientation" value="0"/>
+			</metadata>
+		</asset>
+		<asset duration="0s" format="r2" hasVideo="1" id="r7" name="Slide5" src="file:///Users/dontsov/Documents/CODE/Keylogger/examples/presentation/Slide5.jpg" start="0s" uid="83671424F7F007089452D1172F70FFA6FE">
+			<metadata>
+				<md key="com.apple.proapps.mio.ingestDate" value="2017-03-20 02:17:23 +0300"/>
+				<md key="com.apple.proapps.spotlight.kMDItemOrientation" value="0"/>
+			</metadata>
+		</asset>
+	</resources>
+	<library location="file:///Users/dontsov/Movies/keylogger.fcpbundle/">
+		<event name="presentation" uid="010c1baa-939b-4656-9214-f4759a464cde">
+			<project name="keylogger_proj" uid="58d62304-b87a-477c-980c-4d8e28f78118">
+				<sequence audioLayout="stereo" audioRate="48k" duration="140s" format="r1" tcFormat="NDF" tcStart="0s">
+					<spine>
+						<video duration="10s" name="Slide1" offset="0s" ref="r3" start="3600s"/>
+						<video duration="10s" name="Slide2" offset="10s" ref="r4" start="3600s"/>
+						<video duration="20s" name="Slide3" offset="20s" ref="r5" start="3600s"/>
+						<video duration="90s" name="Slide4" offset="40s" ref="r6" start="3600s"/>
+						<video duration="10s" name="Slide5" offset="130s" ref="r7" start="3600s"/>
+					</spine>
+				</sequence>
+			</project>
+		</event>
+	</library>
+</fcpxml>

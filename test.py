@@ -2,7 +2,7 @@
 __author__ = 'dontsov'
 import unittest
 
-from main import fc_duration, parse_keylogger_buf
+from fxpxml import fc_duration, parse_keylogger_buf
 
 class TestKeyLogger(unittest.TestCase):
 
