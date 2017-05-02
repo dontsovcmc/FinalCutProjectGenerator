@@ -45,4 +45,13 @@ python main.py <arguments>
                     Last slide show length, seconds
 -g GAP_SEC, --gap_sec GAP_SEC
                     Black screen before slides, seconds
-                    
+-a --animation Animation on slides, format 'S1:N1;S2:N2;..' Sx-slide num, Nx-clicks
+-q --settings  You can tune transformation of slides. Example: "transform.scale=47;transform.position.x=55;transform.position.y=21.1759"
+
+
+# Example:
+
+python main.py -k "./2017-04-26 20-05-12.482.txt" -o "./a.fcpxml" -s "/home/username/Movies/pres" -w 1920 -t 1080 -m 25 -e "pres" -n "pres" -f 10 -l 10 -g 10
+
+#TODO:
+- Автоматическое определение временных меток: если кейлоггер хардварный без часов.

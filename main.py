@@ -19,9 +19,11 @@ if __name__ == "__main__":
     parser.add_argument('-e', '--event', default='present_event', help='FC event name')
     parser.add_argument('-n', '--name', default='present_proj', help='FC project name')
 
-    parser.add_argument('-f', '--first_sec', type=int, default=10, help='First slide show length, seconds')
-    parser.add_argument('-l', '--last_sec', type=int, default=10, help='Last slide show length, seconds')
-    parser.add_argument('-g', '--gap_sec', type=int, default=0, help='Black screen before slides, seconds')
+    parser.add_argument('-f', '--first_sec', type=float, default=10, help='First slide show length, seconds (float)')
+    parser.add_argument('-l', '--last_sec', type=float, default=10, help='Last slide show length, seconds (float)')
+    parser.add_argument('-g', '--gap_sec', type=float, default=0, help='Black screen before slides, seconds (float)')
+    parser.add_argument('-a', '--animation', default="", help="Animation on slides, format 'S1:N1;S2:N2;..' Sx-slide num, Nx-clicks")
+    parser.add_argument('-q', '--settings', default="", help="You can tune your slides transformation. Example: transform.scale=47;transform.position.x=55;transform.position.y=21.1759")
     kwargs = vars(parser.parse_args())
 
     for k, v in kwargs.iteritems():
